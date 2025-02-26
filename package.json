@@ -1,0 +1,12 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clear": "pnpm recursive exec rm -rf node_modules && rm -rf pruned",
+    "build": "rm -rf pruned && pnpm --filter=my-app --prod deploy pruned",
+    "dev": "pnpm --filter=my-app start",
+    "start": "node pruned/src/index.ts"
+  },
+  "packageManager": "pnpm@10.5.1+sha512.c424c076bd25c1a5b188c37bb1ca56cc1e136fbf530d98bcb3289982a08fd25527b8c9c4ec113be5e3393c39af04521dd647bcf1d0801eaf8ac6a7b14da313af"
+}
