@@ -5,8 +5,8 @@
   "scripts": {
     "clear": "pnpm recursive exec rm -rf node_modules && rm -rf pruned",
     "build": "rm -rf pruned && pnpm --filter=my-app --prod deploy pruned",
-    "dev": "pnpm --filter=my-app start",
-    "start": "node pruned/src/index.ts"
+    "dev": "pnpm --filter=my-app dev",
+    "start": "node --import='amaro/strip' pruned/src/index.ts"
   },
   "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b"
 }

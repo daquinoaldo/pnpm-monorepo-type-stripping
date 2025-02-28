@@ -4,9 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node src/index.ts"
+    "dev": "node src/index.ts",
+    "start": "node --import='amaro/strip' src/index.ts"
   },
   "dependencies": {
+    "amaro": "^0.4.0",
     "my-lib": "workspace:*"
   }
 }
