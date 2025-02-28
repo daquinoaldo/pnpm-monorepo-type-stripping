@@ -1,3 +1,5 @@
-import { MY_LIB } from "my-lib";
+import { printMsg } from "@nlekane/dummy-npm-package";
+import { printCustomMsg } from "./custom-message-printer";
 
-console.log(MY_LIB);
+printMsg();
+printCustomMsg();

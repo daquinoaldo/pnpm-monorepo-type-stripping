@@ -1,9 +1,12 @@
 {
-  "name": "my-lib",
+  "name": "@repo/my-lib",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "exports": {
     ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "image-size": "1.1.1"
   }
 }
