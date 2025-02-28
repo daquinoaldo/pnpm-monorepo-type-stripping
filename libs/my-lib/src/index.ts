@@ -1,1 +1,3 @@
-export const MY_LIB = "my-lib";
+import { imageSize } from 'image-size'
+
+export const dimensions = imageSize('image.jpg')

@@ -1,5 +1,5 @@
-import { MY_LIB } from "@repo/my-lib";
+import { dimensions } from "@repo/my-lib";
 
 export function printCustomMsg() {
-  console.log("This is a message from", MY_LIB);
+  console.log("my-lib says the dimensions are", dimensions);
 }
