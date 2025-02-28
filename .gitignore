@@ -1,3 +1,4 @@
+dist
 node_modules
-pruned
 pnpm-lock.yaml
+pruned

@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "clear": "pnpm recursive exec rm -rf node_modules && rm -rf pruned",
-    "build": "rm -rf pruned && pnpm --filter=my-app --prod deploy pruned",
-    "dev": "pnpm --filter=my-app start",
-    "start": "node pruned/src/index.ts"
+    "clear": "pnpm recursive exec rm -rf node_modules && rm -rf pruned && rm -rf apps/my-app/dist",
+    "build": "pnpm --filter=my-app build",
+    "dev": "pnpm --filter=my-app dev",
+    "start": "node apps/my-app/dist/index.js"
   },
   "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b"
 }
